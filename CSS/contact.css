@@ -1,0 +1,149 @@
+div.contact
+{
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.contactContainer
+{
+    margin: 10rem;
+    color: white;
+    width: 50vw;
+    display: flex;
+}
+
+div.contactLeft
+{
+    background-color: #350D5C;
+    width: 25vw;
+    padding: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+div.contactLeft h3
+{
+    font-size: 2.2rem;
+}
+
+div.contactLeft p
+{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+
+div.contactRight
+{
+    background-color: #FBB436;
+    width: 25vw;
+    padding: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+div.contactRight h3
+{
+    font-size: 2.2rem;
+}
+
+div.contactRight form
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+div.contactRight form input
+{
+    border-radius: 7.7rem;
+    height: 4rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding-left: 2rem;
+    transition: all ease-in-out 0.7s;
+}
+
+div.contactRight form textarea
+{
+    height: 11rem;
+    border-radius: 3.8rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 2rem;
+    resize: none;
+    transition: all ease-in-out 0.7s;
+}
+
+div.contactRight form button
+{
+    height: 4rem;
+    width: 9.3rem;
+    border-radius: 7.5rem;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+div.contactRight form input::placeholder
+{
+    color: white; 
+}
+
+div.contactRight form textarea::placeholder
+{
+    color: white;     
+}
+
+div.contactRight form input:focus
+{
+    outline: none;
+    transform: scale(1.02);
+}
+
+div.contactRight form textarea:focus
+{
+    outline: none;
+    transform: scale(1.02);
+}
+
+div.contactRight form button:hover
+{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1110px)
+{
+    div.contactContainer 
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    div.contactLeft
+    {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 100%;
+    }
+
+    div.contactRight
+    {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+    }
+}
+
+

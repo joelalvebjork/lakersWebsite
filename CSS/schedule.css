@@ -1,0 +1,145 @@
+/* Hero Section */
+
+div.hero
+{
+    background-image: url('../Pictures/Schedule/matches.png');
+}
+
+/* Schedule Section */
+section.schedule
+{
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+section.schedule h2
+{
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+}
+
+div.game
+{
+    width: 60%;
+    height: 100%;
+    margin: 4rem;
+    transition: 0.7s ease-in-out;
+}
+
+div.game:hover
+{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+div.game h3
+{
+    color: white;
+    font-size: 3rem;
+    border-left: 1rem solid white;
+    line-height: 5rem;
+    padding-left: 4rem;
+    text-transform: uppercase;
+}
+
+div.match
+{
+    background-color: white;
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4rem;
+}
+
+div.match p 
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div.match img
+{
+    width: 100px;
+}
+
+
+    
+@media(max-width:1110px)  {
+
+    div.game {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    div.match {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        padding: 2rem;
+        background-color: white;
+        grid-template-areas: 
+        "homeLogo score awayLogo"
+        "homeName arena awayName";
+    }
+
+    div.match img {
+        width: 60px;
+    }
+
+    div.match p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    div.game h3 {
+        font-size: 2rem;
+        padding-left: 2rem;
+        border-left: 0.5rem solid white;
+    }
+
+    /* Lakers logo */
+    div.match img.homeLogo {
+        grid-area: homeLogo;
+    }
+
+    /* Lakers Text */
+    div.match p.homeName{
+        grid-area: homeName;
+        text-align: center;
+    }
+
+    /* 0 - 0 */
+    div.match p.score {
+        grid-area: score;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    /* AwayText */
+    div.match p.awayName {
+        grid-area: awayName;
+        text-align: center;
+    }
+
+    /* AwayLogo */
+    div.match img.awayLogo {
+        grid-area: awayLogo;
+    }
+
+    /* Arena */
+    div.match p.arena {
+        grid-area: arena;
+        text-align: center;
+    }
+
+    
+}

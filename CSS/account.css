@@ -1,0 +1,79 @@
+section.hero
+{
+    background-image: none;
+    background-color: #FBB436;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+    padding: 5rem;
+    
+}
+
+section.hero h2
+{
+    font-size: 4rem;
+}
+
+section.hero div.accountInfo
+{
+    background-color: #350D5C;
+    padding: 1.5rem;
+}
+
+section.hero div.accountInfo h3
+{
+    font-size: 2.5rem;
+}
+
+section.hero div.accountInfo ul
+{
+    list-style: none;
+    text-align: left;
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+
+section.hero div.accountInfo ul li
+{
+    padding: 1rem;
+}
+
+section.hero div.accountInfo ul li span.infoTitle 
+{
+    font-weight: bold;
+}
+
+section.hero div.accountInfo button 
+{
+    width: 11.5rem;  
+    padding: 0.7rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 0.5rem;
+    transition: 0.7s;
+}
+
+section.hero div.accountInfo button:hover
+{
+    cursor: pointer;
+    background-color: #FBB436;
+    color: white;
+}
+
+@media screen and (max-width: 1110px)
+{
+    section.hero
+    {
+        margin-top: 9rem;
+    }
+
+    section.hero div.accountInfo button
+    {
+        font-size: 1.4rem;
+    }
+    
+}

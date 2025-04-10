@@ -1,0 +1,510 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Gives font to different types of text*/
+html
+{
+    font-family: "poppins", sans-serif;
+    font-size: 10px; /* 1rem = 10px, 2.5rem = 25px... */
+}
+
+html h1, h2, h3
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+}
+
+html a, p, textarea::placeholder, textarea, input[type="date"]
+{
+    font-family: "poppins", sans-serif;
+}
+
+/* Navbar Section */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #350D5C;
+    width: 100%;
+    height: 7rem;
+    z-index: 100;
+}
+
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+nav.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+nav.navbar a:hover {
+    color: #fdb928;
+}
+
+nav.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav.navbar img {
+    width: 110px;
+}
+
+nav.navbar img:hover {
+    cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* Ipad Version */
+@media(max-width: 1110px) {
+    nav.navbar {
+        position: fixed; 
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-item {
+        margin: 1.6rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        margin-top: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-left, .nav-right {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    
+}
+
+/* Hides mobilemenu on PC */
+#mobileMenu 
+{
+    display: none;
+}
+  
+  @media(max-width: 1110px) {
+    /* Hides Left- and Rightside on smaller screens */
+    #leftSide, #rightSide {
+      display: none;
+    }
+  
+    /* Show mobileversion */
+    #mobileMenu {
+      position: fixed;
+      left: -100%;
+      top: 7rem;
+      flex-direction: column;
+      background-color: #350D5C;
+      width: 100%;
+      text-align: center;
+      transition: left 0.3s ease-in-out;
+      display: flex;
+      z-index: 99;
+    }
+  
+    #mobileMenu.active {
+      left: 0;
+      margin-top: 2rem;
+    }
+  }
+  
+
+/* Hero Section */
+section.hero
+{
+    height: 75vh;
+    background-image: url('../Pictures/Info/playerArena.png');
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section.hero div.hero-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.hero h1
+{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+section.hero p
+{
+    font-size: 1.8rem;
+}
+
+section.hero a.btn
+{
+    background-color: #350D5C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    transition: all ease-in-out 0.5s;
+}
+
+section.hero a.btn:hover
+{
+    transform: scale(1.1);
+    border-radius: 0.8rem;
+}
+
+/* About Section */
+section.about
+{
+    height: 120vh;
+    background: linear-gradient(to bottom, #350D5C, #701BC2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+section.about h2
+{
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 3rem;
+}
+
+section.about div.info
+{
+    background-image: url('../Pictures/Info/lebron 1.png');
+    background-size: cover;
+    background-position: top;
+    width: 40%;
+    height: 75%;
+    margin-top: 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section.about div.info div.yellow-bar
+{
+    background-color: #FBB436;
+    text-align: end;
+    padding: 0.2rem 1rem;
+}
+
+section.about div.info div.aboutInfo
+{
+    background-color: #350D5C;
+    padding: 1rem;
+}
+
+div.aboutInfo
+{
+    font-size: 2rem;
+}
+
+section.about div.info div.aboutInfo p 
+{
+    padding-top: 1rem;
+}
+
+@media(max-width: 1110px) 
+{
+    section.about div.info
+{
+    width: 80%;
+}
+}
+
+/* Lakers Store */
+section.lakersStore
+{
+    background: linear-gradient(to bottom, #FBB436, #956B20);
+    padding: 5rem 0 10rem;
+}
+
+section.lakersStore h2 
+{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.storeItems
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 7.5rem;
+    padding-top: 10rem;
+    justify-content: center;
+}
+
+div.jersay
+{
+    background-color: white;
+    width: 30rem;
+    height: 50rem;
+    border-radius: 2.7rem;
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+} 
+
+div.jersay:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+div.jersay img
+{
+    width: 350px;
+}
+
+/* Footer */
+footer
+{
+    background: linear-gradient(to bottom, #350D5C, #701BC2);
+    color: white;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3
+{
+    font-size: 2.5rem;
+}
+
+footer a, p
+{
+    font-size: 1.7rem;
+}
+
+/* Left Side */
+div.footerLeft
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.5rem;
+    width: 50%;
+    margin-left: 10rem;
+}
+
+div.footerSection h3:hover
+{
+    cursor: pointer;
+}
+
+div.footerSection a, div.footerSection p
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 1.5rem;
+    transition: all ease-in-out 0.2s;
+}
+
+div.footerSection a:hover, div.footerSection p:hover
+{
+    color: #fdb928; 
+}
+
+div.footerSection a:not(.link)
+{
+    text-decoration: none;
+}
+
+/* Right Side (Newsletter) */
+div.footerRight
+{
+    margin-right: 10rem;
+    display: flex; 
+    flex-direction: column;
+}
+
+div.footerRight p 
+{
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+form.newsletter
+{
+    margin-top: 2.5rem;
+}
+
+form.newsletter input
+{
+    background: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+    height: 5rem;
+    color: white;
+    padding-left: 2rem; 
+    font-size: 1.7rem;
+}
+
+form.newsletter input::placeholder
+{
+    color: white;
+    font-size: 1.7rem;
+}
+
+form.newsletter input:focus
+{
+    outline: none;
+}
+
+form.newsletter button
+{
+    height: 50px;
+    width: 12.5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    transition: all ease-in-out 0.5s;
+    background-color: white;
+    color: black;
+    
+}
+
+form.newsletter button:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Ipad Version */
+@media screen and (max-width: 1110px)
+{
+    /* Lakers Store */
+    div.storeItems
+    {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    /* Footer */
+    footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.footerLeft
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 4rem;
+    }
+
+    div.footerRight
+    {
+        margin: 0;
+        margin-top: 5rem;
+        width: 50%;
+    }
+
+    form.newsletter button
+    {
+        margin-top: 2.5rem;
+    }
+}
+
+/* Phone Version */
+@media screen and (max-width: 840px) 
+{
+    /* Lakers Store */
+    div.storeItems
+    {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    /* Footer */
+    form.newsletter input
+    {
+        width: 100%;
+    }
+}

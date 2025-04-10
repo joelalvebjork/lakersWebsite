@@ -1,0 +1,148 @@
+/* Hero Section */
+
+div.hero
+{
+    background-image: url('../Pictures/Players/playersBg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh; 
+}
+
+/* Player Section */
+section.playersSection
+{
+    background-color: #232323;
+    display: grid;
+    justify-content: center;
+    padding: 3rem 0 3rem 0;
+}
+
+section.playersSection h2
+{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    color: white;
+}
+
+div.playerObjects
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+article.player
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25rem; 
+    transition: ease-in-out 0.7s;
+}
+
+article.player:hover
+{
+    transform: scale(1.05);
+    
+}
+
+div.topPart
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #350D5C;
+    color: white;
+}
+
+div.topPart p
+{
+    align-self: flex-start;
+    font-size: 2.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+div.topPart img
+{
+    width: 85%;
+    
+}
+
+div.bottomPart div.playerInformation
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+div.bottomPart
+{
+    background-color: #FBB436;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+div.bottomPart h3
+{
+    font-size: 2.2rem;
+    color: white;
+}
+
+div.bottomPart p 
+{
+    margin: 1rem 0 2rem 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+div.bottomPart a
+{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 7.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    transition: all ease-in-out 0.5s;
+}
+
+div.bottomPart a:hover
+{
+    background-color: #350D5C;
+    color: white;
+}
+
+/* Ipad Version */
+
+@media screen and (max-width: 1000px)
+{
+    
+    div.playerObjects
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Phone Version */
+
+@media screen and (max-width: 700px)
+{
+    
+    div.playerObjects
+    {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+   
+
+}

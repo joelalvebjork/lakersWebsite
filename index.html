@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Los Angeles Lakers</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul id="leftSide" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/players.html">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/schedule.html">Schedule</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="Pictures/lakersLogo.png" alt="Los Angeles Lakers Logga">
+            </div>
+
+            <ul id="rightSide" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="https://www.nba.com/lakers/partners/corporate-partners">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link login-link" href="HTML/login.html">Log In</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul id="mobileMenu" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/players.html">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.nba.com/lakers/partners/corporate-partners">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML/contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link login-link" href="HTML/login.html">Log In</a></li>
+              </ul>
+        </nav>
+
+        <!-- Hero Sction -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Lakers - Atlanta Hawks</h1>
+                <p>NBA | Friday 9/12 16:30</p>
+                <a href="https://www.nba.com/lakers/tickets" class="btn">Buy Tickets</a>
+            </div>
+        </section>
+
+        <!-- About Sction -->
+        <section class="about">
+            <h2>Lakers: The NBA's Most Successful Team</h2>
+            <div class="info">
+                <div class="yellow-bar">
+                    <p>2024-12-05</p>
+                </div>    
+                <div class="aboutInfo">
+                    <h3>Los Angeles Lakers</h3>
+                    <p>Los Angeles Lakers are one of the NBA's most successful teams. With stars like Magic Johnson, Kobe Bryant, and LeBron James, they have won the most championships after the Boston Celtics. The Lakers are known for their exciting style of play and have a large and passionate fanbase.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lakers Store -->
+        <section class="lakersStore">
+            <h2>Lakers Store</h2>
+            <div class="storeItems">
+                <div class="jersay">
+                    <img src="Pictures/Info/jersayOne.png" alt="Picture of lakers jersay."> 
+                </div>
+
+                <div class="jersay">
+                    <img src="Pictures/Info/jersayTwo.png" alt="Picture of lakers jersay."> 
+                </div>
+
+                <div class="jersay">
+                    <img src="Pictures/Info/jersayOne.png" alt="Picture of lakers jersay.">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Left section of footer -->
+            <div class="footerLeft">
+                <div class="footerSection">
+                    <h3>Schedule</h3>
+                    <a href="schedule.html">Game Schedule</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/losangeleslakers/?locale=sv_SE" class="link">Facebook</a>
+                    <a href="https://www.instagram.com/lakers/" class="link">Instagram</a>
+                    <a href="https://www.tiktok.com/@lakers?lang=sv-SE" class="link">TikTok</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Sponsors</h3>
+                    <a href="https://www.nba.com/lakers/laker-girls/laker-girls-main?ls=footer_nav" class="link">Laker Girls</a>
+                    <a href="https://www.nba.com/lakers/partners/corporate-partners" class="link">Business Sponsors</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Contact</h3>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <!-- Right section of footer -->
+             <div class="footerRight">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+                <form class="newsletter">
+                    <input type="email" id= "newsletterEmail" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+             </div>
+        </footer>
+        <script type="module" src="JS/hamburgerMenu.js"></script>
+        <script type="module" src="JS/register.js"></script>
+        <script type="module" src="JS/login.js"></script>
+        <script type="module" src="JS/updateSite.js"></script>
+        <script type="module" src="JS/newsletter.js"></script>
+</body>
+</html>

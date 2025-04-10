@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/players.css">
+    <link rel="stylesheet" href="../CSS/schedule.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+
+    <title>Los Angeles Lakers</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul id="leftSide" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../Pictures/lakersLogo.png" alt="Los Angeles Lakers Logga">
+            </div>
+
+            <ul id="rightSide" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="https://www.nba.com/lakers/partners/corporate-partners">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link login-link" href="login.html">Log In</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul id="mobileMenu" class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.nba.com/lakers/partners/corporate-partners">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link login-link" href="login.html">Log In</a></li>
+              </ul>
+        </nav>
+
+
+        <!-- Login Page -->
+        <section class="login">
+            <div class="loginContainer">
+                <h3>Login</h3>
+                <form>
+                    <div class="inputGroup">
+                        <input type="email" placeholder="Email" id="loginEmail" required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="password" placeholder="Password" id="loginPassword" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" id="loginSubmit">Login</button>
+
+                    <div class="register">
+                        <p>Don't have an account? <a href="register.html">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Left section of footer -->
+            <div class="footerLeft">
+                <div class="footerSection">
+                    <h3>Schedule</h3>
+                    <a href="schedule.html">Game Schedule</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/losangeleslakers/?locale=sv_SE" class="link">Facebook</a>
+                    <a href="https://www.instagram.com/lakers/" class="link">Instagram</a>
+                    <a href="https://www.tiktok.com/@lakers?lang=sv-SE" class="link">TikTok</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Sponsors</h3>
+                    <a href="https://www.nba.com/lakers/laker-girls/laker-girls-main?ls=footer_nav" class="link">Laker Girls</a>
+                    <a href="https://www.nba.com/lakers/partners/corporate-partners" class="link">Business Sponsors</a>
+                </div>
+                <div class="footerSection">
+                    <h3>Contact</h3>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <!-- Right section of footer -->
+             <div class="footerRight">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+                <form class="newsletter">
+                    <input type="email" id= "newsletterEmail" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+             </div>
+        </footer>
+        <script type="module" src="../JS/hamburgerMenu.js"></script>
+        <script type="module" src="../JS/register.js"></script>
+        <script type="module" src="../JS/login.js"></script>
+        <script type="module" src="../JS/updateSite.js"></script>
+        <script type="module" src="../JS/newsletter.js"></script>
+    </body>
+    </html>
